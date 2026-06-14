@@ -1,0 +1,35 @@
+UPSERT INTO transactions_v2
+(
+    call_id,
+    call_time,
+    client_id,
+    region_code,
+    campaign_type,
+    call_status,
+    client_response,
+    duration_sec,
+    follow_up_required
+)
+VALUES
+(
+    "call_20260501_demo_001",
+    Datetime("2026-05-01T11:42:15Z"),
+    "client_4412",
+    "DE-HE",
+    "credit_card_offer",
+    "answered",
+    "interested",
+    184,
+    true
+),
+(
+    "call_20260501_demo_002",
+    Datetime("2026-05-01T12:10:30Z"),
+    "client_8841",
+    "DE-BY",
+    "cash_loan",
+    "missed",
+    "no_answer",
+    0,
+    false
+);
